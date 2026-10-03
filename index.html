@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A.K.J Seafood Kitchen &amp; Restaurant | Kelaniya</title>
+  <meta name="description" content="A.K.J Seafood Kitchen & Restaurant, Kelaniya — seafood kottu, fried rice, chopsuey, platters, fresh juices and coffee.">
+  <link rel="icon" type="image/png" href="images/logo-red.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ============ HEADER ============ -->
+  <header class="header" id="header">
+    <div class="container nav">
+      <a href="#home" class="brand">
+        <img src="images/logo-white.png" alt="A.K.J logo">
+        <span>
+          <strong>A.K.J</strong>
+          <small>Seafood Kitchen &amp; Restaurant</small>
+        </span>
+      </a>
+      <nav class="nav-links" id="navLinks">
+        <a href="#home">Home</a>
+        <a href="#menu">Menu</a>
+        <a href="#categories">Categories</a>
+        <a href="#drinks">Drinks</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="cart-btn" id="cartBtn" aria-label="Open order list">
+          <svg viewBox="0 0 24 24"><path d="M7 18a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm10 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4ZM5.2 4l.4 2H21l-2.2 8.2a2 2 0 0 1-1.9 1.5H8.4a2 2 0 0 1-2-1.6L4.1 2H1V0h4.8l.4 2"/></svg>
+          <span class="cart-count" id="cartCount">0</span>
+        </button>
+        <button class="burger" id="burger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="home">
+    <div class="container hero-grid">
+      <div class="hero-text">
+        <p class="eyebrow">Kelaniya's Seafood Kitchen</p>
+        <h1 id="heroTitle">Fresh From<br>The Sea</h1>
+        <p class="hero-sub" id="heroSub">Sizzling seafood kottu, smoky fried rice and generous platters — cooked fresh on the tava, every single order.</p>
+        <div class="hero-cta">
+          <a href="#menu" class="btn btn-yellow">
+            <span class="btn-ico">&#10095;</span> View Menu
+          </a>
+          <a href="#contact" class="btn btn-ghost">Find Us</a>
+        </div>
+        <div class="hero-stats">
+          <div><strong>40+</strong><span>Dishes</span></div>
+          <div><strong>16</strong><span>Fresh Juices</span></div>
+          <div><strong>24/7</strong><span>Always Open</span></div>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="hero-ring"></div>
+        <img class="hero-plate active" src="images/biryani.png" alt="Rice dish">
+        <img class="hero-plate" src="images/chow-mein.png" alt="Noodles">
+        <img class="hero-plate" src="images/dishes-spread.png" alt="Spread of dishes">
+        <img class="float f1" src="images/citrus.png" alt="" aria-hidden="true">
+        <img class="float f2" src="images/coffee-splash.png" alt="" aria-hidden="true">
+        <span class="chili c1"></span><span class="chili c2"></span><span class="chili c3"></span>
+      </div>
+    </div>
+    <div class="hero-dots" id="heroDots">
+      <button class="active" aria-label="Slide 1"></button>
+      <button aria-label="Slide 2"></button>
+      <button aria-label="Slide 3"></button>
+    </div>
+  </section>
+
+  <!-- ============ OUR MENU ============ -->
+  <section class="section menu" id="menu">
+    <div class="container">
+      <h2 class="title">Our Menu</h2>
+      <p class="subtitle">Kottu can be made with <b>Roti, Noodles, Pasta</b> or <b>String Hoppers</b>. All prices in Sri Lankan Rupees.</p>
+
+      <div class="tabs" id="menuTabs" role="tablist"></div>
+
+      <div class="menu-wrap">
+        <div class="menu-side">
+          <img id="menuImage" src="images/chow-mein.png" alt="">
+          <div class="menu-side-text">
+            <h3 id="menuSideTitle">Kottu</h3>
+            <p id="menuSideNote">Chopped roti tossed on a hot tava with veg, egg and your pick of meat or seafood.</p>
+          </div>
+        </div>
+        <div class="menu-list">
+          <div class="menu-head" id="menuHead"></div>
+          <ul id="menuList"></ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CATEGORIES ============ -->
+  <section class="section" id="categories">
+    <div class="container">
+      <h2 class="title">Categories</h2>
+      <div class="cat-grid">
+        <a class="cat-card" href="#menu" data-tab="kottu">
+          <h3>Seafood<br>Kottu</h3>
+          <img src="images/chow-mein.png" alt="Kottu" loading="lazy">
+        </a>
+        <a class="cat-card" href="#menu" data-tab="rice">
+          <h3>Fried &amp;<br>Chopsuey Rice</h3>
+          <img src="images/biryani.png" alt="Fried rice" loading="lazy">
+        </a>
+        <a class="cat-card" href="#menu" data-tab="platters">
+          <h3>Family<br>Platters</h3>
+          <img src="images/dishes-spread.png" alt="Platter" loading="lazy">
+        </a>
+        <a class="cat-card" href="#menu" data-tab="juice">
+          <h3>Fresh<br>Juices</h3>
+          <img src="images/juices-mint.png" alt="Fresh juices" loading="lazy">
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PRODUCTS ============ -->
+  <section class="section" id="products">
+    <div class="container">
+      <h2 class="title">Popular Picks</h2>
+      <div class="slider">
+        <button class="slide-arrow prev" id="prevBtn" aria-label="Previous">&#10094;</button>
+        <div class="product-track" id="productTrack"></div>
+        <button class="slide-arrow next" id="nextBtn" aria-label="Next">&#10095;</button>
+      </div>
+      <div class="slider-dots" id="sliderDots"></div>
+    </div>
+  </section>
+
+  <!-- ============ DRINKS ============ -->
+  <section class="section drinks" id="drinks">
+    <div class="container">
+      <h2 class="title">Coffee &amp; Fresh Juices</h2>
+      <div class="drink-grid">
+        <article class="drink-card coffee">
+          <div class="drink-imgs">
+            <img class="d-main" src="images/coffee-art.png" alt="Cappuccino" loading="lazy">
+            <img class="d-side" src="images/iced-coffee.png" alt="Iced coffee" loading="lazy">
+            <img class="d-deco" src="images/coffee-top.png" alt="" loading="lazy" aria-hidden="true">
+          </div>
+          <div class="drink-body">
+            <h3>Coffee &amp; More</h3>
+            <p>From a quick single espresso to a creamy iced cappuccino or a bubble tea.</p>
+            <span class="from">From <b>Rs. 350</b></span>
+            <a href="#menu" class="btn btn-yellow btn-sm" data-tab="coffee"><span class="btn-ico">&#10095;</span> See Coffee</a>
+          </div>
+        </article>
+        <article class="drink-card juice">
+          <div class="drink-imgs">
+            <img class="d-main" src="images/fruit-juice.png" alt="Fruit juices" loading="lazy">
+            <img class="d-side" src="images/orange-juice.png" alt="Orange juice" loading="lazy">
+            <img class="d-deco" src="images/citrus.png" alt="" loading="lazy" aria-hidden="true">
+          </div>
+          <div class="drink-body">
+            <h3>Fresh Juices</h3>
+            <p>Woodapple, nelli, veralu, passion fruit, faluda and more — blended to order.</p>
+            <span class="from">From <b>Rs. 150</b></span>
+            <a href="#menu" class="btn btn-yellow btn-sm" data-tab="juice"><span class="btn-ico">&#10095;</span> See Juices</a>
+          </div>
+        </article>
+      </div>
+
+      <div class="juice-strip">
+        <img src="images/orange-glass.png" alt="Orange juice glass" loading="lazy">
+        <img src="images/juices-trio.png" alt="Juice selection" loading="lazy">
+        <img src="images/coffee-splash.png" alt="Coffee beans" loading="lazy">
+        <img src="images/juices-mint.png" alt="Juices with mint" loading="lazy">
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section class="section about" id="about">
+    <div class="container about-grid">
+      <div class="about-visual">
+        <div class="about-ring"></div>
+        <img class="about-main" src="images/dishes-spread.png" alt="Our dishes" loading="lazy">
+        <img class="about-small s1" src="images/coffee-art.png" alt="Cappuccino" loading="lazy">
+        <img class="about-small s2" src="images/chow-mein.png" alt="Noodle kottu" loading="lazy">
+        <span class="chili c1"></span><span class="chili c2"></span>
+      </div>
+      <div class="about-text">
+        <h2 class="title left">About Us</h2>
+        <p>At <b>A.K.J Seafood Kitchen &amp; Restaurant</b> we bring the catch of the day straight to the tava. Tuna, sailfish, prawns and cuttlefish — chopped, tossed and served hot with the bold flavours Sri Lanka loves.</p>
+        <p>Whether it's a quick half kottu after work or a family platter that feeds five, every plate is made fresh when you order. Wash it down with a fresh woodapple juice or a smooth cappuccino.</p>
+        <ul class="about-points">
+          <li>Fresh seafood daily</li>
+          <li>Platters for 5 people</li>
+          <li>Kottu with roti, noodles, pasta or string hoppers</li>
+          <li>Dine-in &amp; takeaway</li>
+        </ul>
+        <a href="#contact" class="btn btn-yellow"><span class="btn-ico">&#10095;</span> Visit Us</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ GALLERY ============ -->
+  <section class="section gallery-sec">
+    <div class="container">
+      <h2 class="title">From Our Kitchen</h2>
+      <div class="gallery">
+        <figure class="g-big"><img src="images/thali.png" alt="Rice platter" loading="lazy"></figure>
+        <figure><img src="images/biryani.png" alt="Chicken fried rice" loading="lazy"></figure>
+        <figure><img src="images/chow-mein.png" alt="Noodle kottu" loading="lazy"></figure>
+        <figure><img src="images/coffee-top.png" alt="Americano" loading="lazy"></figure>
+        <figure><img src="images/orange-glass.png" alt="Orange juice" loading="lazy"></figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="section contact" id="contact">
+    <div class="container contact-grid">
+      <div class="contact-card">
+        <h2 class="title left">Visit Us</h2>
+        <ul class="info">
+          <li><span class="i">&#9906;</span><div><b>Address</b><p>No. 866, Bulugaha Junction, Kelaniya</p><a class="map-link" href="https://share.google/NpkVLJ8nfF54IHtbf" target="_blank" rel="noopener">Get directions &#8599;</a></div></li>
+          <li><span class="i">&#9742;</span><div><b>Phone / WhatsApp</b><p><a href="tel:+94752959252">+94 75 295 9252</a></p></div></li>
+          <li><span class="i">&#9200;</span><div><b>Open Hours</b><p>Open 24 hours · 7 days a week</p></div></li>
+        </ul>
+        <div class="hero-cta">
+          <a href="tel:+94752959252" class="btn btn-yellow"><span class="btn-ico">&#9742;</span> Call to Order</a>
+          <a href="#" class="btn btn-ghost" id="waLink" target="_blank" rel="noopener">WhatsApp</a>
+        </div>
+      </div>
+      <div class="map">
+        <iframe title="Map — Seafood Kitchen &amp; Restaurants, Bulugaha Junction" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+          src="https://maps.google.com/maps?q=Seafood+Kitchen+%26+Restaurants,+866+Bulugaha+Junction&cid=17025933622915338944&output=embed"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="brand big">
+        <img src="images/logo-white.png" alt="A.K.J logo">
+        <span><strong>A.K.J</strong><small>Seafood Kitchen &amp; Restaurant</small></span>
+      </div>
+      <nav>
+        <a href="#menu">Menu</a><a href="#drinks">Drinks</a><a href="#about">About</a><a href="#contact">Contact</a>
+      </nav>
+      <p class="copy">&copy; <span id="year"></span> A.K.J Seafood Kitchen &amp; Restaurant · No. 866, Bulugaha Junction, Kelaniya · <a href="tel:+94752959252">+94 75 295 9252</a> · Open 24/7. Prices subject to change.</p>
+    </div>
+  </footer>
+
+  <!-- ============ ORDER DRAWER ============ -->
+  <div class="overlay" id="overlay"></div>
+  <aside class="drawer" id="drawer" aria-label="Your order">
+    <div class="drawer-head">
+      <h3>Your Order</h3>
+      <button class="close" id="closeDrawer" aria-label="Close">&times;</button>
+    </div>
+    <ul class="drawer-list" id="drawerList"></ul>
+    <div class="drawer-foot">
+      <div class="total"><span>Total</span><b id="drawerTotal">Rs. 0</b></div>
+      <button class="btn btn-yellow full" id="sendOrder">Send Order via WhatsApp</button>
+      <button class="link" id="clearOrder">Clear order</button>
+    </div>
+  </aside>
+
+  <div class="toast" id="toast"></div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,5 @@
+# Original full-size photos (~160MB) — the website uses the optimized copies in images/
+Media/
+
+# Local preview server (not part of the website)
+.claude/
